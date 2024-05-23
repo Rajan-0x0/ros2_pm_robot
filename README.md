@@ -17,7 +17,9 @@
 
 
 4. Build packages
-
+   colcon build
+   source install/setup.bash
+   
 4. Usage
 
 5. External documentation
