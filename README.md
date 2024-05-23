@@ -5,7 +5,7 @@ Skills and skillsets to move Donatello Turtle
 1. Repository overview
 
 2. Installation
-3. 
+   
    Start by changing directory to your workspace!
    
    git clone https://github.com/me2m/RSL_Donatello_Skillsets.git
