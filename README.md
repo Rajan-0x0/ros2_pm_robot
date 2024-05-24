@@ -1,6 +1,24 @@
-Robot Skill Language
+**Robot Skill Language**
 
-Skills and skillsets to move Donatello Turtle
+**Skills and skillsets to move Donatello Turtle**
+
+...
+
+**1. Install packages**
+
+sudo apt install ros-humble-desktop-full
+
+source /opt/ros/humble/setup.bash
+
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+
+source ~/ros2_ws/install/setup.bash
+
+colcon build  --symlink-install
+
+...
+
+**2. Generate Skillset Codes and User Packages for Donatello**
 
 python3 -m robot_language turtle.rl -g turtle.json
 
@@ -8,13 +26,21 @@ python3 -m robot_language turtle.rl -g turtle.json -p donatello
 
 ...
 
+**3. Build and Source**
+
 colcon build
 
 source install/setup.bash
 
-ros2 run turtlesim turtlesim_node
-
 ...
+
+**4. Running Skillsets**
+
+      a. Lauch Turtlesim
+      
+          ros2 run turtlesim turtlesim_node
+          
+      b. Spawing new tur     
 
 ros2 service call /kill turtlesim/srv/Kill "name: turtle1"
 
