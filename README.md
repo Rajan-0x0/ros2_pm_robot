@@ -20,10 +20,10 @@ colcon build  --symlink-install
 
 **2. Generate Skillset Codes and User Packages for Donatello**
 
-    ...
+    ##
     sudo apt install ros-humble-desktop-full
-    ...
 
+    ##
     sudo apt install ros-humble-xacro
 
 
