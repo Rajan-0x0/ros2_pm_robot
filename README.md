@@ -27,7 +27,7 @@ colcon build  --symlink-install
     sudo apt install ros-humble-xacro
 
 
-...
+
 
 **3. Build and Source**
 
