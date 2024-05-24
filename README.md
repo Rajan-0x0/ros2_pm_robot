@@ -10,23 +10,23 @@
         source /opt/ros/humble/setup.bash
 ****
         source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
-
+****
         source ~/ros2_ws/install/setup.bash
-
+****
         colcon build  --symlink-install
 
 
 **2. Generate Skillset Codes and User Packages for Donatello**
 
         python3 -m robot_language turtle.rl -g turtle.json
-                
+****
         sudo apt install ros-humble-xacro
     
 
 **3. Build and Source**
 
         colcon build
-
+****
         source install/setup.bash
 
 
@@ -43,7 +43,7 @@
         ros2 service call /donatello/set_pen turtlesim/srv/SetPen "{r: 75, g: 0, b: 130, width: 5}"
 
 
-
+****
         ros2 run donatello donatello_node
 
         ros2 topic echo /donatello_node/turtle_skillset/data/pose
