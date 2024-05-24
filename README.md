@@ -5,11 +5,11 @@
 
 **1. Install packages**
 
-        ...bash
+        '''bash
 
         sudo apt install ros-humble-desktop-full
         
-        ...bash
+        '''bash
 
         source /opt/ros/humble/setup.bash
 
