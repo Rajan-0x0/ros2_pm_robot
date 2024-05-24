@@ -22,9 +22,6 @@ colcon build  --symlink-install
 
      python3 -m robot_language turtle.rl -g turtle.json
 
-
-     python3 -m robot_language turtle.rl -g turtle.json -p donatello
-
 ...
 
 **3. Build and Source**
