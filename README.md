@@ -20,9 +20,9 @@ colcon build  --symlink-install
 
 **2. Generate Skillset Codes and User Packages for Donatello**
 
-python3 -m robot_language turtle.rl -g turtle.json
+     python3 -m robot_language turtle.rl -g turtle.json
 
-python3 -m robot_language turtle.rl -g turtle.json -p donatello
+     python3 -m robot_language turtle.rl -g turtle.json -p donatello
 
 ...
 
@@ -35,12 +35,6 @@ source install/setup.bash
 ...
 
 **4. Running Skillsets**
-
-     a. Lauch Turtlesim
-      
-          ros2 run turtlesim turtlesim_node
-          
-      b. Spawing new tur     
 
 ros2 service call /kill turtlesim/srv/Kill "name: turtle1"
 
