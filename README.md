@@ -22,7 +22,7 @@ colcon build  --symlink-install
 
     sudo apt install ros-humble-desktop-full **
 
-sudo apt install ros-humble-xacro
+    sudo apt install ros-humble-xacro
 
 
 ...
