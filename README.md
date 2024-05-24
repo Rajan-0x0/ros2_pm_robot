@@ -18,8 +18,8 @@
 
 **2. Generate Skillset Codes and User Packages for Donatello**
 
-        sudo apt install ros-humble-desktop-full
-
+        python3 -m robot_language turtle.rl -g turtle.json
+                
         sudo apt install ros-humble-xacro
     
 
