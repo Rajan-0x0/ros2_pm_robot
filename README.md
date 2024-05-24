@@ -5,11 +5,9 @@
 
 **1. Install packages**
 
-        '''java
-
         sudo apt install ros-humble-desktop-full
         
-        '''html
+**g**
 
         source /opt/ros/humble/setup.bash
 
