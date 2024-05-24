@@ -6,17 +6,27 @@ python3 -m robot_language turtle.rl -g turtle.json
 
 python3 -m robot_language turtle.rl -g turtle.json -p donatello
 
+
+
 colcon build
 
 source install/setup.bash
 
 ros2 run turtlesim turtlesim_node
 
+
+
 ros2 service call /kill turtlesim/srv/Kill "name: turtle1"
+
 ros2 service call /kill turtlesim/srv/Kill "{name: donatello}"
+
 ros2 service call /clear std_srvs/srv/Empty "{}"
+
 ros2 service call /spawn turtlesim/srv/Spawn "{x: 5.0, y: 5.0, name: 'donatello'}"
+
 ros2 service call /donatello/set_pen turtlesim/srv/SetPen "{r: 75, g: 0, b: 130, width: 5}"
+
+
 
 ros2 run donatello donatello_node
 
