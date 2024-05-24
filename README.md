@@ -20,11 +20,10 @@ colcon build  --symlink-install
 
 **2. Generate Skillset Codes and User Packages for Donatello**
 
-     python3 -m robot_language turtle.rl -g turtle.json
+sudo apt install ros-humble-desktop-full
 
-     
+sudo apt install ros-humble-xacro
 
-     python3 -m robot_language turtle.rl -g turtle.json -p donatello
 
 ...
 
