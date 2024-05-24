@@ -36,7 +36,7 @@ source install/setup.bash
 
 **4. Running Skillsets**
 
-      **a. Lauch Turtlesim**
+     a. Lauch Turtlesim
       
           ros2 run turtlesim turtlesim_node
           
