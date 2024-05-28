@@ -103,3 +103,12 @@ ros2 topic echo /donatello_node/turtle_skillset/skill/move_in_circle/response
 
 ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_in_circle/request turtle_skillset_interfaces/msg/SkillMoveInCircleRequest "{id: '', input: { radius: 2.0, speed: 0.2 }}"
 ****
+
+**Running 'Rotate Angle' skill**
+
+ros2 topic echo /donatello_node/turtle_skillset/skill/rotate_angle/response
+
+ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=donatello/cmd_vel
+
+ros2 topic pub -1 /donatello_node/turtle_skillset/skill/rotate_angle/request turtle_skillset_interfaces/msg/SkillRotateAngleRequest "{id: '', input: { angle: 314, speed: 0.5}}"
+****
