@@ -30,9 +30,14 @@ sudo apt update
 
 sudo apt install ros-galactic-turtlesim
 ****
+**Run following command to create 3 directories - build, install, and log:**
+
+colcon build  --symlink-install
+****
+ 
 **2. Clone Package RSL_Donatello_Skillsets**
 
-Before running the following command cd directory to src folder created during the build, to copy files turtle.rl and turtle.json in src folder.
+Before running the following command create a folder src in your workspace and cd directory to this folder in Terminator, to copy files turtle.rl and turtle.json in src folder.
 
 git clone https://github.com/me2m/skillsets_for_donatello.git
 ****
@@ -49,7 +54,7 @@ python3 -m robot_language turtle.rl -g turtle.json -p donatello
 
 **4. Build and Source**
 
-Before running skillsets we need to build and source the project. Run the following commands.
+Before running skillsets we need to build and source the project again. Run the following commands.
 
 colcon build
 
