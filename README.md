@@ -20,7 +20,9 @@ source ~/ros2_ws/install/setup.bash
 colcon build  --symlink-install
 ****
 **2. Clone Package RSL_Donatello_Skillsets**
-git clone 
+
+git clone https://github.com/me2m/RSL_Donatello_Skillsets.git
+****
 
 **3. Generate Skillset Codes and User Packages for Donatello**
 
