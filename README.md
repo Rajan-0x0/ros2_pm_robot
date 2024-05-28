@@ -5,7 +5,7 @@
 
 **1. Install packages**
 
-Make sure that you have installed the following packages:
+**Make sure that you have installed the following packages:**
 
 
 sudo apt install ros-humble-desktop-full
@@ -37,7 +37,7 @@ source install/setup.bash
 
 **4. Running Skillsets**
 
-Initializing, Customizing and running Donatello Turtle:
+**Initializing, Customizing and running Donatello Turtle:**
 
 ros2 run turtlesim turtlesim_node
 
@@ -54,7 +54,7 @@ ros2 service call /donatello/set_pen turtlesim/srv/SetPen "{r: 75, g: 0, b: 130,
 ros2 run donatello donatello_node
 ****
 
-Initial Position and Status of Donatello turtle:
+**Initial Position and Status of Donatello turtle:**
 
 ros2 topic echo /donatello_node/turtle_skillset/data/pose
 
@@ -63,14 +63,14 @@ ros2 topic echo /donatello_node/turtle_skillset/status
 ros2 topic pub -1 /donatello_node/turtle_skillset/event_request turtle_skillset_interfaces/msg/EventRequest "{id: '', name: 'authority_to_skill'}"
 ****
 
-Running 'Move Forward' skill
+**Running 'Move Forward' skill**
 
 ros2 topic echo /donatello_node/turtle_skillset/skill/move_forward/response
 
 ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_forward/request turtle_skillset_interfaces/msg/SkillMoveForwardRequest "{id: '', input: { distance: 2.0, speed: 0.2 }}"
 ****
 
-Running 'Move In Circle' skill
+**Running 'Move In Circle' skill**
 
 ros2 topic echo /donatello_node/turtle_skillset/skill/move_in_circle/response
 
