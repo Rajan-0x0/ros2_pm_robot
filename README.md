@@ -62,6 +62,6 @@ ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_forward/request tur
 
 
 
-        ros2 topic echo /donatello_node/turtle_skillset/skill/move_in_circle/response
+ros2 topic echo /donatello_node/turtle_skillset/skill/move_in_circle/response
 
-        ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_in_circle/request turtle_skillset_interfaces/msg/SkillMoveInCircleRequest "{id: '', input: { radius: 2.0, speed: 0.2 }}"
+ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_in_circle/request turtle_skillset_interfaces/msg/SkillMoveInCircleRequest "{id: '', input: { radius: 2.0, speed: 0.2 }}"
