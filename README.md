@@ -1,7 +1,8 @@
 **Robot Skill Language**
 
 **Skills and skillsets to move Donatello Turtle**
-
+****
+Start by changing directory to your workspace!
 
 **1. Install packages**
 
@@ -18,8 +19,10 @@ source ~/ros2_ws/install/setup.bash
       
 colcon build  --symlink-install
 ****
+**2. Clone Package RSL_Donatello_Skillsets**
+git clone 
 
-**2. Generate Skillset Codes and User Packages for Donatello**
+**3. Generate Skillset Codes and User Packages for Donatello**
 
 python3 -m robot_language turtle.rl -g turtle.json
 
@@ -27,7 +30,7 @@ sudo apt install ros-humble-xacro
 ****
     
 
-**3. Build and Source**
+**4. Build and Source**
 
 colcon build
 
@@ -35,7 +38,7 @@ source install/setup.bash
 ****
 
 
-**4. Running Skillsets**
+**5. Running Skillsets**
 
 **Initializing, Customizing and running Donatello Turtle:**
 
