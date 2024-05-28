@@ -24,6 +24,7 @@ colcon build  --symlink-install
 python3 -m robot_language turtle.rl -g turtle.json
 
 sudo apt install ros-humble-xacro
+****
     
 
 **3. Build and Source**
@@ -31,6 +32,7 @@ sudo apt install ros-humble-xacro
 colcon build
 
 source install/setup.bash
+****
 
 
 **4. Running Skillsets**
