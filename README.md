@@ -18,8 +18,16 @@ source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 source ~/ros2_ws/install/setup.bash        
       
 colcon build  --symlink-install
+
+**Install the turtlesim package:**
+
+sudo apt update
+
+sudo apt install ros-galactic-turtlesim
 ****
 **2. Clone Package RSL_Donatello_Skillsets**
+
+Before running the following command cd directory to src folder created during the build.
 
 git clone https://github.com/me2m/skillsets_for_donatello.git
 ****
