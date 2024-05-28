@@ -8,9 +8,9 @@
 Make sure that you have installed the following packages:
 
      sudo apt install ros-humble-desktop-full
-      
+sdsd
      source /opt/ros/humble/setup.bash        
-      
+sds
      source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash     
       
      source ~/ros2_ws/install/setup.bash        
