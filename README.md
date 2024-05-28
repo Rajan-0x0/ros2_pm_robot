@@ -11,15 +11,20 @@ Start by changing directory to your workspace!
 
 sudo apt install ros-humble-desktop-full
 
+sudo apt install ros-humble-rqt*
+
+**Add these commands to the .bashrc file:**
+
 source /opt/ros/humble/setup.bash        
 
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash     
       
-source ~/ros2_ws/install/setup.bash        
-      
-colcon build  --symlink-install
+source ~/ros2_ws/install/setup.bash       
+
 
 **Install the turtlesim package:**
+
+We use turtlesim package to control the donatello turtle, so needs to install turtlesim package.
 
 sudo apt update
 
@@ -27,20 +32,24 @@ sudo apt install ros-galactic-turtlesim
 ****
 **2. Clone Package RSL_Donatello_Skillsets**
 
-Before running the following command cd directory to src folder created during the build.
+Before running the following command cd directory to src folder created during the build, to copy files turtle.rl and turtle.json in src folder.
 
 git clone https://github.com/me2m/skillsets_for_donatello.git
 ****
 
 **3. Generate Skillset Codes and User Packages for Donatello**
 
+Run the following command from the same directory.
+
 python3 -m robot_language turtle.rl -g turtle.json
 
-sudo apt install ros-humble-xacro
+python3 -m robot_language turtle.rl -g turtle.json -p donatello
 ****
     
 
 **4. Build and Source**
+
+Before running skillsets we need to build and source the project. Run the following commands.
 
 colcon build
 
