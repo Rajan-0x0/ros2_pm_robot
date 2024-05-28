@@ -21,7 +21,7 @@ colcon build  --symlink-install
 ****
 **2. Clone Package RSL_Donatello_Skillsets**
 
-git clone https://github.com/me2m/RSL_Donatello_Skillsets.git
+git clone https://github.com/me2m/donatello_skillsets.git
 ****
 
 **3. Generate Skillset Codes and User Packages for Donatello**
