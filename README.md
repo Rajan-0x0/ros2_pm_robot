@@ -5,6 +5,8 @@
 
 **1. Install packages**
 
+Make sure that you have installed the following packages:
+
      sudo apt install ros-humble-desktop-full
         
      source /opt/ros/humble/setup.bash
