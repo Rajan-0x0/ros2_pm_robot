@@ -24,7 +24,7 @@ source ~/ros2_ws/install/setup.bash
 
 <ins> **Install the turtlesim package:** </ins>
 
-We use turtlesim package to control the donatello turtle, so needs to install turtlesim package.
+* We use turtlesim package to control the donatello turtle, so needs to install turtlesim package.
 
 sudo apt update
 
