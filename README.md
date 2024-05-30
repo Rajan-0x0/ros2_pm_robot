@@ -6,14 +6,14 @@ Start by changing directory to your workspace!
 
 **1. Install packages**
 
-<ins>**Make sure that you have installed the following packages:**</ins>
+<ins> **Make sure that you have installed the following packages:** </ins>
 
 
 sudo apt install ros-humble-desktop-full
 
 sudo apt install ros-humble-rqt*
 
-**Add these commands to the .bashrc file:**
+<ins> **Add these commands to the .bashrc file:** </ins>
 
 source /opt/ros/humble/setup.bash        
 
@@ -22,7 +22,7 @@ source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 source ~/ros2_ws/install/setup.bash       
 
 
-**Install the turtlesim package:**
+<ins> **Install the turtlesim package:** </ins>
 
 We use turtlesim package to control the donatello turtle, so needs to install turtlesim package.
 
