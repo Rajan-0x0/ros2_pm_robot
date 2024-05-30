@@ -30,25 +30,25 @@ We use turtlesim package to control the donatello turtle, so needs to install tu
 
 * sudo apt install ros-galactic-turtlesim
 ****
-**Run following command to create 3 directories - build, install, and log in your workspace:**
+<ins> **Run following command to create 3 directories - build, install, and log in your workspace:** </ins>
 
-colcon build  --symlink-install
+* colcon build  --symlink-install
 ****
  
 **2. Clone Package RSL_Donatello_Skillsets**
 
 Before running the following command create a folder src in your workspace and cd directory to this folder in Terminator, to copy all necessary files in src folder.
 
-git clone https://github.com/me2m/skillsets_for_donatello.git
+* git clone https://github.com/me2m/skillsets_for_donatello.git
 ****
 
 **3. Generate Skillset Codes and User Packages for Donatello**
 
 Run the following command from the same directory.
 
-python3 -m robot_language turtle.rl -g turtle.json
+* python3 -m robot_language turtle.rl -g turtle.json
 
-python3 -m robot_language turtle.rl -g turtle.json -p donatello
+* python3 -m robot_language turtle.rl -g turtle.json -p donatello
 ****
     
 
@@ -56,59 +56,59 @@ python3 -m robot_language turtle.rl -g turtle.json -p donatello
 
 Before running skillsets we need to build and source the project again. Run the following commands.
 
-colcon build
+* colcon build
 
-source install/setup.bash
+* source install/setup.bash
 ****
 
 
 **5. Running Skillsets**
 
-**Initializing, Customizing and running Donatello Turtle:**
+<ins> **Initializing, Customizing and running Donatello Turtle:** </ins>
 
-ros2 run turtlesim turtlesim_node
+* ros2 run turtlesim turtlesim_node
 
-ros2 service call /kill turtlesim/srv/Kill "name: turtle1"
+* ros2 service call /kill turtlesim/srv/Kill "name: turtle1"
 
-ros2 service call /kill turtlesim/srv/Kill "{name: donatello}"
+* ros2 service call /kill turtlesim/srv/Kill "{name: donatello}"
 
-ros2 service call /clear std_srvs/srv/Empty "{}"
+* ros2 service call /clear std_srvs/srv/Empty "{}"
 
-ros2 service call /spawn turtlesim/srv/Spawn "{x: 5.0, y: 5.0, name: 'donatello'}"
+* ros2 service call /spawn turtlesim/srv/Spawn "{x: 5.0, y: 5.0, name: 'donatello'}"
 
-ros2 service call /donatello/set_pen turtlesim/srv/SetPen "{r: 75, g: 0, b: 130, width: 5}"
+* ros2 service call /donatello/set_pen turtlesim/srv/SetPen "{r: 75, g: 0, b: 130, width: 5}"
 
-ros2 run donatello donatello_node
+* ros2 run donatello donatello_node
 ****
 
-**Initial Position and Status of Donatello turtle:**
+<ins> **Initial Position and Status of Donatello turtle:** </ins>
 
-ros2 topic echo /donatello_node/turtle_skillset/data/pose
+* ros2 topic echo /donatello_node/turtle_skillset/data/pose
 
-ros2 topic echo /donatello_node/turtle_skillset/status
+* ros2 topic echo /donatello_node/turtle_skillset/status
 
-ros2 topic pub -1 /donatello_node/turtle_skillset/event_request turtle_skillset_interfaces/msg/EventRequest "{id: '', name: 'authority_to_skill'}"
+* ros2 topic pub -1 /donatello_node/turtle_skillset/event_request turtle_skillset_interfaces/msg/EventRequest "{id: '', name: 'authority_to_skill'}"
 ****
 
-**Running 'Move Forward' skill**
+<ins> **Running 'Move Forward' skill** </ins>
 
-ros2 topic echo /donatello_node/turtle_skillset/skill/move_forward/response
+* ros2 topic echo /donatello_node/turtle_skillset/skill/move_forward/response
 
-ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_forward/request turtle_skillset_interfaces/msg/SkillMoveForwardRequest "{id: '', input: { distance: 2.0, speed: 0.2 }}"
+* ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_forward/request turtle_skillset_interfaces/msg/SkillMoveForwardRequest "{id: '', input: { distance: 2.0, speed: 0.2 }}"
 ****
 
-**Running 'Move In Circle' skill**
+<ins> **Running 'Move In Circle' skill** </ins>
 
-ros2 topic echo /donatello_node/turtle_skillset/skill/move_in_circle/response
+* ros2 topic echo /donatello_node/turtle_skillset/skill/move_in_circle/response
 
-ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_in_circle/request turtle_skillset_interfaces/msg/SkillMoveInCircleRequest "{id: '', input: { radius: 2.0, speed: 0.2 }}"
+* ros2 topic pub -1 /donatello_node/turtle_skillset/skill/move_in_circle/request turtle_skillset_interfaces/msg/SkillMoveInCircleRequest "{id: '', input: { radius: 2.0, speed: 0.2 }}"
 ****
 
-**Running 'Rotate Angle' skill**
+<ins> **Running 'Rotate Angle' skill** </ins>
 
-ros2 topic echo /donatello_node/turtle_skillset/skill/rotate_angle/response
+* ros2 topic echo /donatello_node/turtle_skillset/skill/rotate_angle/response
 
-ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=donatello/cmd_vel
+* ros2 run turtlesim turtle_teleop_key --ros-args --remap turtle1/cmd_vel:=donatello/cmd_vel
 
-ros2 topic pub -1 /donatello_node/turtle_skillset/skill/rotate_angle/request turtle_skillset_interfaces/msg/SkillRotateAngleRequest "{id: '', input: { angle: 314, speed: 0.5}}"
+* ros2 topic pub -1 /donatello_node/turtle_skillset/skill/rotate_angle/request turtle_skillset_interfaces/msg/SkillRotateAngleRequest "{id: '', input: { angle: 314, speed: 0.5}}"
 ****
