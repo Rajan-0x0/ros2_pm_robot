@@ -1,6 +1,6 @@
 # **Robot Skill Language**
 
-### **Skills and skillsets to move Donatello Turtle**
+## **Skills and skillsets to move Donatello Turtle**
 ****
 Start by changing directory to your workspace!
 
@@ -35,14 +35,14 @@ We use turtlesim package to control the donatello turtle, so needs to install tu
 * colcon build  --symlink-install
 ****
  
-**2. Clone Package RSL_Donatello_Skillsets**
+### **2. Clone Package RSL_Donatello_Skillsets**
 
 Before running the following command create a folder src in your workspace and cd directory to this folder in Terminator, to copy all necessary files in src folder.
 
 * git clone https://github.com/me2m/skillsets_for_donatello.git
 ****
 
-**3. Generate Skillset Codes and User Packages for Donatello**
+### **3. Generate Skillset Codes and User Packages for Donatello**
 
 Run the following command from the same directory.
 
@@ -52,7 +52,7 @@ Run the following command from the same directory.
 ****
     
 
-**4. Build and Source**
+### **4. Build and Source**
 
 Before running skillsets we need to build and source the project again. Run the following commands.
 
@@ -62,7 +62,7 @@ Before running skillsets we need to build and source the project again. Run the 
 ****
 
 
-**5. Running Skillsets**
+### **5. Running Skillsets**
 
 <ins> **Initializing, Customizing and running Donatello Turtle:** </ins>
 
