@@ -1,10 +1,10 @@
 ## **Robot Skill Language**
 
-**Skills and skillsets to move Donatello Turtle**
+### **Skills and skillsets to move Donatello Turtle**
 ****
 Start by changing directory to your workspace!
 
-**1. Install packages**
+### **1. Install packages**
 
 <ins> **Make sure that you have installed the following packages:** </ins>
 
