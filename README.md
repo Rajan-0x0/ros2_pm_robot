@@ -6,7 +6,7 @@ Start by changing directory to your workspace!
 
 **1. Install packages**
 
-**Make sure that you have installed the following packages:**
+<ins>**Make sure that you have installed the following packages:**</ins>
 
 
 sudo apt install ros-humble-desktop-full
