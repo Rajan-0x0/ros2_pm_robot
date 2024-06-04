@@ -2,7 +2,7 @@
 
 ## **Skills and skillsets to move Donatello Turtle**
 ****
-Start by changing directory to your workspace!
+Begin by switching to YOUR workspace directory.
 
 ### **1. Install packages**
 
