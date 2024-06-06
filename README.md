@@ -44,7 +44,7 @@ Before running the following command, make sure you are in your workspace. This 
 
 ### **3. Generate Skillset Codes and User Packages for Donatello**
 
-Run the following command from the same directory.
+Change directory to src in Terminator and run the following command.
 
 * python3 -m robot_language turtle.rl -g turtle.json
 
