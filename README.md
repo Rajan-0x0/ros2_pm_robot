@@ -37,9 +37,9 @@ We use turtlesim package to control the donatello turtle, so needs to install tu
  
 ### **2. Clone Package RSL_Donatello_Skillsets**
 
-Before running the following command create a folder src in your workspace and cd directory to this folder in Terminator, to copy all necessary files in src folder.
+Before running the following command, make sure you are in your workspace. This command will copy all necessary files in src folder.
 
-* git clone https://github.com/me2m/skillsets_for_donatello.git/src
+* git clone https://github.com/me2m/skillsets_for_donatello.git src
 ****
 
 ### **3. Generate Skillset Codes and User Packages for Donatello**
