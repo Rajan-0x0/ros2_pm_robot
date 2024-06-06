@@ -39,7 +39,7 @@ We use turtlesim package to control the donatello turtle, so needs to install tu
 
 Before running the following command create a folder src in your workspace and cd directory to this folder in Terminator, to copy all necessary files in src folder.
 
-* git clone https://github.com/me2m/repo.git /skillsets_for_donatello/src
+* git clone https://github.com/me2m/skillsets_for_donatello.git/src
 ****
 
 ### **3. Generate Skillset Codes and User Packages for Donatello**
